@@ -1,0 +1,4 @@
+# Ignorar credenciales
+credentials.json
+token.pickle
+
