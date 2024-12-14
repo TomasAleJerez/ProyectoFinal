@@ -67,15 +67,7 @@ def crear_evento(service, nombre_evento, fecha_hora, duracion):
         return f"Evento creado: {evento_creado.get('htmlLink')}"  # Devuelve el enlace al evento creado
     except HttpError as error:
         return f'Ha ocurrido un error al crear el evento: {error}'  # Maneja cualquier excepción y devuelve un mensaje de error
-
-# Ejemplo de uso
-service = obtener_servicio_calendario()
-if service:
-    nombre_evento = "Reunión de prueba"  # Nombre del evento
-    fecha_hora = "2024-12-14T10:00:00"  # Fecha y hora del evento en formato ISO (YYYY-MM-DDTHH:MM:SS)
-    duracion = 2  # Duración del evento en horas
-    resultado = crear_evento(service, nombre_evento, fecha_hora, duracion)  # Crea el evento y obtiene el resultado
-    print(resultado)  # Imprime el resultado
+    
 
 
 
